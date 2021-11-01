@@ -4,7 +4,7 @@ Technical Assessment from Sastaticket.pk for the job role of Junior Backend Deve
 **Assessment Task**
 
 You are required a build a simple flight inventory management backend where users can come search flights on the platform. The backend will be created using Django Framework and will consist of 3 models
-(User) , (Flight), and  (Airport). and a foreign key to Flight as departure_airport and arrival_airport (one to one),
+(User) , (Flight), and  (Airport). and a foreign key to Flight as departure_airport and arrival_airport (one to many).
 
 
 ***User model:***
