@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "c3e1edf1-001f-4b6a-b775-cb31c6141541",
+		"name": "Sastaticket_FlightInventoryManagementSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SignUpAPI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Irshad",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Nawaz",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "irshadns",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "irshadnaw@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "irshad321",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/signup/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FlightPublicSearchAPI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/flight/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"flight",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JWT_AccessToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "irshadns",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "irshad321",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FlightAuthSearchAPI",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
